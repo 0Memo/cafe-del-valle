@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", Arial, Sans-serif;
+  font-size: 16px; }
+
+.conteneur {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+/* ---- ---- HEADER ---- ---- */
+header {
+  width: 100%;
+  background: url("bg.jpg") #281a0c;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0; }
+  header .conteneur {
+    position: relative;
+    height: 700px; }
+    header .conteneur .menu {
+      width: 100%;
+      text-align: right; }
+      header .conteneur .menu a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        display: inline-block;
+        margin: 40px 20px;
+        text-decoration: none;
+        position: relative; }
+        header .conteneur .menu a:hover {
+          text-decoration: underline; }
+    header .conteneur .textes {
+      width: 100%;
+      color: #fff;
+      position: relative;
+      top: 35%;
+      margin-top: -270px;
+      text-align: center; }
+      header .conteneur .textes .nom {
+        font-size: 50px;
+        font-weight: 600; }
+        header .conteneur .textes .nom span {
+          font-weight: 100; }
+      header .conteneur .textes h3 {
+        font-weight: 300;
+        font-size: 25px;
+        font-style: italic; }
+
+/* ---- ---- MAIN ---- ---- */
+.main {
+  background: url("texture.png");
+  background-repeat: repeat; }
+  .main .auSujetDe .conteneur {
+    overflow: visible;
+    position: relative; }
+    .main .auSujetDe .conteneur .photo {
+      width: 80%;
+      position: absolute;
+      left: 0;
+      top: -50px;
+      z-index: 0;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35); }
+      .main .auSujetDe .conteneur .photo img {
+        vertical-align: top;
+        width: 100%; }
+    .main .auSujetDe .conteneur article {
+      background: #fff;
+      padding: 40px;
+      width: 50%;
+      position: relative;
+      top: 500px;
+      z-index: 1;
+      float: right;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35); }
+      .main .auSujetDe .conteneur article h3 {
+        font-size: 50px;
+        font-weight: 300;
+        margin-bottom: 40px; }
+      .main .auSujetDe .conteneur article p {
+        line-height: 28px;
+        margin-bottom: 15px; }
+  .main .menu {
+    padding-top: 570px;
+    margin-bottom: 50px; }
+    .main .menu .titre {
+      font-size: 40px;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 40px; }
+    .main .menu .conteneur-menu {
+      border: 1px solid #000;
+      background: transparent;
+      padding: 10px;
+      overflow: hidden; }
+      .main .menu .conteneur-menu .conteneur-menu2 {
+        border: 1px solid #000;
+        background: transparent;
+        padding: 10px;
+        overflow: hidden; }
+        .main .menu .conteneur-menu .conteneur-menu2 article {
+          width: 50%;
+          float: left;
+          padding: 20px; }
+          .main .menu .conteneur-menu .conteneur-menu2 article .categorie {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center; }
+          .main .menu .conteneur-menu .conteneur-menu2 article .plat {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 4px dotted #000;
+            overflow: hidden; }
+            .main .menu .conteneur-menu .conteneur-menu2 article .plat .nom {
+              font-size: 20px;
+              margin-bottom: 15px;
+              float: left; }
+            .main .menu .conteneur-menu .conteneur-menu2 article .plat .prix {
+              font-size: 20px;
+              margin-bottom: 15px;
+              float: right; }
+            .main .menu .conteneur-menu .conteneur-menu2 article .plat .description {
+              font-size: 16px;
+              color: #676767;
+              clear: both; }
+  .main .galerie {
+    overflow: hidden; }
+    .main .galerie .photo {
+      width: 25%;
+      float: left; }
+      .main .galerie .photo img {
+        width: 100%;
+        vertical-align: top;
+        opacity: 0.7; }
+        .main .galerie .photo img:hover {
+          opacity: 1;
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3 ease;
+          transition: all 0.3s ease; }
+  .main .emplacement {
+    background: #fff;
+    padding: 60px 0;
+    overflow: hidden; }
+    .main .emplacement .titre {
+      text-align: center;
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: 300;
+      margin-bottom: 40px; }
+    .main .emplacement .adresse {
+      float: left;
+      width: 50%;
+      text-align: left; }
+      .main .emplacement .adresse .rue {
+        margin-bottom: 15px; }
+    .main .emplacement .horaires {
+      float: right;
+      width: 50%;
+      text-align: right; }
+      .main .emplacement .horaires h4 {
+        text-align: center;
+        margin-bottom: 20px; }
+      .main .emplacement .horaires .semaine, .main .emplacement .horaires .week-end {
+        width: 50%;
+        float: left;
+        text-align: center; }
+  .main .carte {
+    width: 100%;
+    overflow: hidden; }
+    .main .carte iframe {
+      width: 100%;
+      max-height: 600px; }
+
+/* ---- ---- FOOTER ---- ---- */
+footer {
+  background: #000; }
+  footer .copyright {
+    text-align: center;
+    padding: 15px 0;
+    color: #fff; }
+
+/*# sourceMappingURL=styles.css.map */
+
+/* ---- ---- MEDIA QUERIES ---- ---- */
+
+@media screen and (max-width: 800px) {
+  header .conteneur {
+    position: static;
+    height: auto;
+  }
+
+  
+  header .conteneur .menu {
+    text-align: center;
+  }
+  
+  header .conteneur .menu a {
+    margin: 10px 20px;
+  }
+  
+  header .conteneur .textes {
+    position: static;
+    margin: 100px 0;
+  }
+  header .conteneur .textes .nom {
+    font-size: 30px;
+  }
+
+  header .conteneur .textes h3 {
+    font-size: 10px;
+  }
+
+  .main .auSujetDe .conteneur .photo {
+    width: 100%;
+    position: relative;
+  }
+
+  .main .auSujetDe .conteneur article {
+    position: relative;
+    width: 100%;
+    top: -50px;
+    transform: translate(0px, 0);
+  }
+
+  .main .menu {
+    padding-top: 300px;
+  }
+
+  .main .menu .conteneur .conteneur-menu .conteneur-menu2 article {
+    width: 100%;
+  }
+
+  .main .galerie .photo {
+    width: 50%;
+  }
+
+  .main .carte {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main .auSujetDe .conteneur article h3 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  .main .menu .conteneur .conteneur-menu .conteneur-menu2 article .plat .nom, 
+  .main .menu .conteneur .conteneur-menu .conteneur-menu2 article .plat .prix {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .main .emplacement .conteneur .adresse {
+    margin-bottom: 15px;
+  }
+
+  .main .emplacement .conteneur .adresse, .main .emplacement .conteneur .horaires {
+    width: 100%;
+    text-align: center;
+  }
+}
